@@ -1,5 +1,7 @@
 const faker = require('faker')
 
+let agentid;
+
 describe('Travel Agent', () => {
 
     it('Create Travel Agent', () => {
@@ -11,18 +13,16 @@ describe('Travel Agent', () => {
                 Accept: "application/json"
             },
             body:{
-                //id: 0,
-                tourist_name: faker.internet.userName(),
-                tourist_email: faker.internet.email(),
-                tourist_location: faker.address.city()
-                //createdat: faker.date.past()
+                agent_name: faker.internet.userName(),
+                agent_email: faker.internet.email(),
+                agent_location: faker.address.city()
             }
         }).then((response)=>{
             cy.log(JSON.stringify(response));
             expect(response.status).to.equal(201);
             expect(response.statusText).to.equal('Created')
-        })
-        
-    });
-    
+            agentid = response.body.id;
+            cy.log(agentid)
+        })        
+    }); 
 });

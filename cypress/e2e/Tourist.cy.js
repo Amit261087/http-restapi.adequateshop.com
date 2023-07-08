@@ -2,7 +2,7 @@ const faker = require('faker')
 
 let touristid;
 
-describe('', () => {
+describe('Tourist', () => {
 
     it('Create Tourist', () => {
         cy.request({
