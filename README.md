@@ -1,0 +1,1 @@
+# http-restapi.adequateshop.com
