@@ -1,0 +1,17 @@
+{
+  "name": "easytravel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.5.3"
+  },
+  "description": "",
+  "devDependencies": {
+    "cypress": "^12.16.0"
+  }
+}
