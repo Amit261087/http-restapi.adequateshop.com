@@ -7,11 +7,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "faker": "^5.5.3"
-  },
   "description": "",
   "devDependencies": {
-    "cypress": "^12.16.0"
+    "cypress": "^12.17.0",
+    "cypress-plugin-xhr-toggle": "^1.0.0",
+    "faker": "^5.5.3"
   }
 }
