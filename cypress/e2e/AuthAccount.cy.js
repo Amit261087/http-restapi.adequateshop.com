@@ -37,7 +37,7 @@ describe('Account Registration', function(){
         password: password
       }
     }).then((response)=>{
-      cy.log(JSON.stringify(response))
+      //cy.log(JSON.stringify(response))
       expect(response.status).to.equal(200);
       expect(response.statusText).to.equal('OK');
       expect(response.body.message).to.equal('success')
