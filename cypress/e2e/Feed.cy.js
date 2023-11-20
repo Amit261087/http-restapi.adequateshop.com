@@ -38,7 +38,7 @@ describe('Feed', () => {
             method: 'GET',
             url: 'http://restapi.adequateshop.com/api/Feed/GetFeedsComment?page=2'
         }).then((response)=>{
-            cy.log(JSON.stringify(response))
+            //cy.log(JSON.stringify(response))
             expect(response.status).to.equal(200)
             expect(response.statusText).to.equal('OK')
         });      
