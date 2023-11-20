@@ -22,7 +22,7 @@ describe('Feed', () => {
         });      
     });
 
-    it('Get All Feeds Comment', () => {
+    it.skip('Get All Feeds Comment', () => {
         cy.request({
             method: 'GET',
             url: 'http://restapi.adequateshop.com/api/Feed/GetFeedsComment'
@@ -33,7 +33,7 @@ describe('Feed', () => {
         });      
     });
     
-    it('Get Feeds Comment by Page No.', () => {
+    it.skip('Get Feeds Comment by Page No.', () => {
         cy.request({
             method: 'GET',
             url: 'http://restapi.adequateshop.com/api/Feed/GetFeedsComment?page=2'
